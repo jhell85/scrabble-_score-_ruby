@@ -8,7 +8,7 @@ class Scrabble
     score = 0
     letters = @word.downcase.split("")
     letters.each do |letter|
-      if letter.index(/[aeiou]/) 
+      if letter.index(/[aeioulnrst]/) 
         score += 1
       elsif letter.index(/[dg]/)
         score += 2
