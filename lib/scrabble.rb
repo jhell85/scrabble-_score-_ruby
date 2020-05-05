@@ -12,6 +12,10 @@ class Scrabble
         score += 1
       elsif letter.index(/[dg]/)
         score += 2
+      elsif letter.index(/[bcmp]/)
+        score += 3
+      elsif letter.index(/[fhvwy]/)
+        score += 4
       end
     end
     score
