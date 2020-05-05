@@ -34,4 +34,9 @@ describe('Scrabble#score') do
     expect(word.score()).to(eq(10))
   end
 
+  it ("adds 8 to score for the letter 'j' and 'x'") do
+    word = Scrabble.new('jinx')
+    expect(word.score()).to(eq(18))
+  end
+
 end
