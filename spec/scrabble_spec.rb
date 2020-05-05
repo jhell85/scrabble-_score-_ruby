@@ -39,4 +39,9 @@ describe('Scrabble#score') do
     expect(word.score()).to(eq(18))
   end
 
+  it ("adds 10 to score for the letter 'q' and 'z'") do
+    word = Scrabble.new('quiz')
+    expect(word.score()).to(eq(22))
+  end
+
 end
