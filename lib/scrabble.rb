@@ -6,9 +6,12 @@ class Scrabble
 
   def score
     score = 0
-    @word.downcase!.split("").each do |letter|
-      if @word.index(/[aeiou]/) 
+    letters = @word.downcase.split("")
+    letters.each do |letter|
+      if letter.index(/[aeiou]/) 
         score += 1
+      elsif letter.index(/[dg]/)
+        score += 2
       end
     end
     score
