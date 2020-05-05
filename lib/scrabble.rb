@@ -5,7 +5,14 @@ class Scrabble
   end
 
   def score
-    @word
+    score = 0
+    @word.downcase!.split("").each do |letter|
+      if @word.index(/[aeiou]/) 
+        score += 1
+      end
+    end
+    score
   end
+
 end
 
