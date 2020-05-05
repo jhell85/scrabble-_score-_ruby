@@ -16,6 +16,8 @@ class Scrabble
         score += 3
       elsif letter.index(/[fhvwy]/)
         score += 4
+      elsif letter.index("k")
+        score += 5
       end
     end
     score
