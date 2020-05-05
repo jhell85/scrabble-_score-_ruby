@@ -20,6 +20,8 @@ class Scrabble
         score += 5
       elsif letter.index(/[jx]/)
         score += 8
+      elsif letter.index(/[qz]/)
+        score += 10
       end
     end
     score
